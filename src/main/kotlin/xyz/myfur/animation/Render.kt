@@ -12,7 +12,7 @@ class Render
     private val frame = JFrame("(=^-^=)")
     private var animation: Animation? = null
     private var timer: Timer? = null
-    private var imagePanel:AnimationPanel? = null
+    private var imagePanel: AnimationPanel? = null
 
     init {
         AnimationLoader.loadAnimationsIfNotLoaded()

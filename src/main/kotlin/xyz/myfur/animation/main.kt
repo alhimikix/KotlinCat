@@ -1,17 +1,9 @@
 package xyz.myfur.animation
 
-import com.alibaba.fastjson.JSON
-import com.alibaba.fastjson.JSONObject
-import java.awt.*
 
-import java.awt.image.BufferedImage
+
 import java.util.*
-import javax.imageio.ImageIO
-import javax.swing.JFrame
-import javax.swing.JPanel
-import kotlin.collections.ArrayList
 import kotlin.concurrent.thread
-import kotlin.concurrent.timer
 
 
 fun main() {

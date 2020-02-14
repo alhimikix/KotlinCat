@@ -4,7 +4,7 @@ import java.awt.Color
 import java.awt.Graphics
 import javax.swing.JPanel
 
-class AnimationPanel(var render:Render) : JPanel()
+class AnimationPanel(var render: Render) : JPanel()
 {
     init {
         isVisible = true
