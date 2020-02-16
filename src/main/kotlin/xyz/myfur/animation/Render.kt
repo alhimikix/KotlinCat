@@ -2,10 +2,12 @@ package xyz.myfur.animation
 
 import java.awt.Color
 import java.awt.Graphics
+import java.awt.Graphics2D
 import java.util.*
 import javax.swing.JFrame
 import javax.swing.JPanel
 import kotlin.concurrent.timer
+
 
 class Render
 {
@@ -21,7 +23,7 @@ class Render
         frame.isAlwaysOnTop = true
     }
 
-    private var currentImage = 0
+    var currentImage = 0
 
     fun render(animation: Animation) {
         if (this.animation != null) stopRender()
@@ -47,7 +49,9 @@ class Render
     }
 
     fun paint(g: Graphics, panel: JPanel) {
-        g.drawImage(this.animation?.images?.get(this.currentImage), 0, 0, panel)
+        animation?.layers?.forEach {
+            it.paint(g as Graphics2D, panel, this)
+        }
     }
 
 }

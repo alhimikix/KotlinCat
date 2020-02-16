@@ -12,14 +12,24 @@ object AnimationLoader{
         JSON.parseArray(AnimationLoader.javaClass.getResourceAsStream("/animations.json").bufferedReader().readText())
                 .forEach{
                     (it as JSONObject).apply {
-                        animations.add(Animation(
+                        var animation = Animation(
                                 getString("name"),
                                 getInteger("blocks"),
                                 getInteger("block_width"),
                                 getInteger("block_height"),
-                                getLong("pause"),
-                                getString("file_name"))
+                                getLong("pause")
                         )
+                        var layers = ArrayList<Layer>()
+                        getJSONArray("layers").forEach { layer ->
+                            (layer as JSONObject).apply{
+                                layers.add(Layer(
+                                        getFloat("alpha"),
+                                        animation,
+                                        getString("file_name")
+                                ))
+                        }}
+                        animation.layers = layers
+                        animations.add(animation)
                     }
                 }
     }

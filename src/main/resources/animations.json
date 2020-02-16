@@ -1,18 +1,41 @@
 [
-    {
-      "name":"Cat",
-      "blocks": 7,
-      "pause": 70,
-      "block_width": 600,
-      "block_height": 600,
-      "file_name": "/cat/cat_small.png"
-    },
-    {
-      "name":"Rabbit",
-      "blocks": 11,
-      "pause": 100,
-      "block_width": 600,
-      "block_height": 600,
-      "file_name": "/rabbit/rabbit_small.png"
-    }
-  ]
+  {
+    "name": "Cat",
+    "blocks": 7,
+    "pause": 70,
+    "block_width": 600,
+    "block_height": 600,
+    "layers": [
+      {
+        "alpha": 1.0,
+        "file_name": "/cat/cat_small.png"
+      }
+    ]
+  },
+  {
+    "name":"Cat_big",
+    "blocks": 7,
+    "pause": 70,
+    "block_width": 1200,
+    "block_height": 1200,
+    "layers": [
+      {
+        "alpha": 1.0,
+        "file_name": "/cat/cat.png"
+      }
+    ]
+  },
+  {
+    "name": "Rabbit",
+    "blocks": 11,
+    "pause": 100,
+    "block_width": 600,
+    "block_height": 600,
+    "layers": [
+      {
+        "alpha": 1.0,
+        "file_name": "/rabbit/rabbit_small.png"
+      }
+    ]
+  }
+]
