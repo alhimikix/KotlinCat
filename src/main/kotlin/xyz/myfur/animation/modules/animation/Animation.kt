@@ -2,6 +2,7 @@ package xyz.myfur.animation.modules.animation
 
 import java.awt.image.BufferedImage
 import javax.imageio.ImageIO
+import kotlinx.coroutines.*
 import kotlin.concurrent.thread
 
 data class Animation(
@@ -28,7 +29,7 @@ data class Layer(
 
     init {
 
-        thread() {
+        thread {
             val sprite = ImageIO.read(AnimationLoader.loadImage(file_name))
             var i = 0
 

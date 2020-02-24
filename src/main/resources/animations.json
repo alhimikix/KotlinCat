@@ -11,7 +11,7 @@
       {
         "blocks": 7,
         "alpha": 1.0,
-        "file_name": "/cat/cat.png",
+        "file_name": "/cat/cat_small.png",
         "offset": {
           "x": 0,
           "y": 0
@@ -24,7 +24,7 @@
     ]
   },
   {
-    "name":"Cat_big",
+    "name": "Cat_big",
     "blocks": 7,
     "pause": 70,
     "window": {
@@ -111,12 +111,88 @@
         "offset": {
           "x": 0,
           "y": 0
+        },
+        "block": {
+          "width": 600,
+          "height": 600
         }
       },
       {
         "alpha": 1.0,
         "blocks": 4,
         "file_name": "/fire/fire_front.png",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "block": {
+          "width": 600,
+          "height": 600
+        }
+      }
+    ]
+  },
+  {
+    "name": "Cat_rabbit",
+    "blocks": 27,
+    "pause": 50,
+    "window": {
+      "width": 600,
+      "height": 600
+    },
+    "layers": [
+      {
+        "blocks": 27,
+        "alpha": 1.0,
+        "file_name": "/cat_rabbit/cat_rabbit.png",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "block": {
+          "width": 600,
+          "height": 600
+        }
+      }
+    ]
+  },
+  {
+    "name": "Cat_rabbit_kiss",
+    "blocks": 30,
+    "pause": 50,
+    "window": {
+      "width": 600,
+      "height": 600
+    },
+    "layers": [
+      {
+        "blocks": 30,
+        "alpha": 1.0,
+        "file_name": "/cat_rabbit/cat_rabbit_kiss.png",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "block": {
+          "width": 600,
+          "height": 600
+        }
+      }
+    ]
+  },
+  {
+    "name": "Rabbit_fall",
+    "blocks": 103,
+    "pause": 40,
+    "window": {
+      "width": 600,
+      "height": 600
+    },
+    "layers": [
+      {
+        "blocks": 103,
+        "alpha": 1.0,
+        "file_name": "/rabbit/rabbit_fall.png",
         "offset": {
           "x": 0,
           "y": 0
