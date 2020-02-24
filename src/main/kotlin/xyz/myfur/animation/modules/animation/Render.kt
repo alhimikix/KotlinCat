@@ -1,5 +1,6 @@
-package xyz.myfur.animation
+package xyz.myfur.animation.modules.animation
 
+import java.awt.AlphaComposite
 import java.awt.Color
 import java.awt.Graphics
 import java.awt.Graphics2D
@@ -29,7 +30,7 @@ class Render
         if (this.animation != null) stopRender()
         this.animation = animation
         imagePanel = AnimationPanel(this)
-        frame.setSize(animation.block_width,animation.block_height)
+        frame.setSize(animation.window.width,animation.window.height)
         frame.add(imagePanel)
         frame.setLocationRelativeTo(null)
         this.timer = timer(period = animation.pause){
@@ -49,9 +50,13 @@ class Render
     }
 
     fun paint(g: Graphics, panel: JPanel) {
-        animation?.layers?.forEach {
-            it.paint(g as Graphics2D, panel, this)
+        animation?.layers?.forEach {layout ->
+            (g as Graphics2D).let {g2 ->
+                g2.color = Color(0,0,0,0)
+                g2.composite = AlphaComposite.getInstance(AlphaComposite.SRC_OVER, layout.alpha)
+                g2.drawImage(layout.images[this.currentImage], 0, 0, panel)
+                g2.composite = AlphaComposite.getInstance(AlphaComposite.SRC_OVER, 1f)
+            }
         }
     }
-
 }

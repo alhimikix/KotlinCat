@@ -2,6 +2,8 @@ package xyz.myfur.animation
 
 
 
+import xyz.myfur.animation.modules.animation.AnimationLoader
+import xyz.myfur.animation.modules.animation.Render
 import java.util.*
 import kotlin.concurrent.thread
 
@@ -9,8 +11,6 @@ import kotlin.concurrent.thread
 fun main() {
     val render = Render()
     animationConsoleLoader(render)
-
-
 }
 
 fun animationConsoleLoader(render: Render){

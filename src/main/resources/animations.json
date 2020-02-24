@@ -3,12 +3,23 @@
     "name": "Cat",
     "blocks": 7,
     "pause": 70,
-    "block_width": 600,
-    "block_height": 600,
+    "window": {
+      "width": 600,
+      "height": 600
+    },
     "layers": [
       {
+        "blocks": 7,
         "alpha": 1.0,
-        "file_name": "/cat/cat_small.png"
+        "file_name": "/cat/cat.png",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "block": {
+          "width": 600,
+          "height": 600
+        }
       }
     ]
   },
@@ -16,12 +27,23 @@
     "name":"Cat_big",
     "blocks": 7,
     "pause": 70,
-    "block_width": 1200,
-    "block_height": 1200,
+    "window": {
+      "width": 1200,
+      "height": 1200
+    },
     "layers": [
       {
+        "blocks": 7,
         "alpha": 1.0,
-        "file_name": "/cat/cat.png"
+        "file_name": "/cat/cat.png",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "block": {
+          "width": 1200,
+          "height": 1200
+        }
       }
     ]
   },
@@ -29,12 +51,80 @@
     "name": "Rabbit",
     "blocks": 11,
     "pause": 100,
-    "block_width": 600,
-    "block_height": 600,
+    "window": {
+      "width": 600,
+      "height": 600
+    },
     "layers": [
       {
+        "blocks": 11,
         "alpha": 1.0,
-        "file_name": "/rabbit/rabbit_small.png"
+        "file_name": "/rabbit/rabbit_small.png",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "block": {
+          "width": 600,
+          "height": 600
+        }
+      }
+    ]
+  },
+  {
+    "name": "Pizza",
+    "blocks": 11,
+    "pause": 1,
+    "window": {
+      "width": 600,
+      "height": 600
+    },
+    "layers": [
+      {
+        "blocks": 11,
+        "alpha": 1.0,
+        "file_name": "/pizza/pizza.png",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "block": {
+          "width": 600,
+          "height": 600
+        }
+      }
+    ]
+  },
+  {
+    "name": "Fire",
+    "blocks": 4,
+    "pause": 140,
+    "window": {
+      "width": 600,
+      "height": 600
+    },
+    "layers": [
+      {
+        "alpha": 0.1,
+        "blocks": 4,
+        "file_name": "/fire/fire_background.png",
+        "offset": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "alpha": 1.0,
+        "blocks": 4,
+        "file_name": "/fire/fire_front.png",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "block": {
+          "width": 600,
+          "height": 600
+        }
       }
     ]
   }

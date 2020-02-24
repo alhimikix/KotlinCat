@@ -1,4 +1,4 @@
-package xyz.myfur.animation
+package xyz.myfur.animation.modules.animation
 
 import java.awt.Color
 import java.awt.Graphics
